@@ -9,11 +9,20 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Next.js-15-black?logo=next.js" alt="Next.js 15" />
-  <img src="https://img.shields.io/badge/Express-4-gray?logo=express" alt="Express 4" />
-  <img src="https://img.shields.io/badge/TypeScript-5-blue?logo=typescript" alt="TypeScript 5" />
-  <img src="https://img.shields.io/badge/Supabase-PostgreSQL-3ecf8e?logo=supabase" alt="Supabase" />
-  <img src="https://img.shields.io/badge/deploy-Vercel-black?logo=vercel" alt="Vercel" />
+  <img src="https://img.shields.io/badge/Next.js-15-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js 15" />
+  <img src="https://img.shields.io/badge/Express-4-000000?style=flat-square&logo=express&logoColor=white" alt="Express 4" />
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript 5" />
+  <img src="https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
+  <img src="https://img.shields.io/badge/Jest-tests-C21325?style=flat-square&logo=jest&logoColor=white" alt="Jest" />
+  <img src="https://img.shields.io/badge/deploy-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
+</p>
+
+<p align="center">
+  <a href="#sobre-o-projeto">Sobre o projeto</a> ·
+  <a href="#stack">Stack</a> ·
+  <a href="#preview">Preview</a> ·
+  <a href="#como-rodar">Como rodar</a> ·
+  <a href="#cicd-e-deploy">CI/CD e deploy</a>
 </p>
 
 ---
@@ -47,7 +56,15 @@
 
 ---
 
-## Como rodar localmente
+## Preview
+
+![Dashboard com estante de livros](https://github.com/user-attachments/assets/b3d71346-8863-403c-82d2-1e40d312fe38)
+
+![Busca e adição de livros](https://github.com/user-attachments/assets/f03a779c-8f22-4478-a09e-a5f76996983b)
+
+---
+
+## Como rodar
 
 ### Pré-requisitos
 
@@ -87,7 +104,7 @@ docker compose -f docker-compose.dev.yml up --build
 
 Acesse em `http://localhost:3000`. A API estará disponível em `http://localhost:3001`.
 
-### 3. Ou inicie sem Docker
+### 4. Ou inicie sem Docker
 
 ```bash
 # Terminal 1 — backend
@@ -111,25 +128,7 @@ cd frontend && npm run test:unit
 
 ---
 
-## Estrutura do repositório
-
-```
-my-bookshelves/
-├── backend/    API REST (Express + TypeScript + Supabase)
-├── frontend/   Web app (Next.js + React + Tailwind)
-├── assets/     Ícones do projeto
-├── docker-compose.dev.yml
-└── docker-compose.prd.yml
-```
-
-Documentação detalhada de cada camada:
-
-- [Backend →](./backend/README.md)
-- [Frontend →](./frontend/README.md)
-
----
-
-## CI/CD
+## CI/CD e deploy
 
 O projeto possui pipelines automáticos via **GitHub Actions** que cobrem qualidade de código, testes e deploy:
 
@@ -150,8 +149,28 @@ feature/* → staging (PR + checks + preview deploy)
              main (merge + deploy produção)
 ```
 
-## Screenshots
+---
 
-![Dashboard com estante de livros](https://github.com/user-attachments/assets/b3d71346-8863-403c-82d2-1e40d312fe38)
+## Estrutura do repositório
 
-![Busca e adição de livros](https://github.com/user-attachments/assets/f03a779c-8f22-4478-a09e-a5f76996983b)
+```
+my-bookshelves/
+├── backend/    API REST (Express + TypeScript + Supabase)
+├── frontend/   Web app (Next.js + React + Tailwind)
+├── assets/     Ícones do projeto
+├── docker-compose.dev.yml
+└── docker-compose.prd.yml
+```
+
+Documentação detalhada de cada camada:
+
+- [Backend →](./backend/README.md)
+- [Frontend →](./frontend/README.md)
+
+---
+
+<p align="center">
+  Desenvolvido por <strong>Luiz Eduardo Veltroni</strong> ·
+  <a href="https://github.com/EduardooPV">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/luiz-veltroni/">LinkedIn</a>
+</p>
