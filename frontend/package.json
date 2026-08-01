@@ -1,5 +1,5 @@
 {
-  "name": "my-v0-project",
+  "name": "my-bookshelves-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "next lint",
     "lint:fix": "eslint . --ext 'src/**/*.{ts,tsx,js}' --fix",
     "format": "prettier --write 'src/**/*.{ts,tsx,js}'",
+    "format:check": "prettier --check 'src/**/*.{ts,tsx,js}'",
     "test:unit": "jest --passWithNoTests",
     "test:unit:watch": "jest --watch"
   },
